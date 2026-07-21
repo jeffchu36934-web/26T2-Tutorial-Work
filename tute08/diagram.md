@@ -20,7 +20,7 @@ sequenceDiagram
         BA-->>WA: 400 Bad Request
         WA-->>Instructor: Show error message
     else Input valid
-        BA-->>WA: Save Assessment
+        BA-->>Database: Save Assessment
         activate Database
         Database-->>BA: Assessment successfully saved
         deactivate Database
